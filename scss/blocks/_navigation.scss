@@ -1,0 +1,22 @@
+.navigation__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+}
+.navigation__item {
+    &:not(:last-child) {
+        margin-right: 42px;
+    }
+}
+.navigation__item-link {
+    font-family: 'Public Sans';  
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    text-decoration: none;
+}

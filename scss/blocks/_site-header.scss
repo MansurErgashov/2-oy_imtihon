@@ -1,0 +1,33 @@
+.site-header {
+    width: 100%;
+    position: fixed;
+    padding-top: 69px;
+    padding-bottom: 9px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__link {
+    text-decoration: none;
+}
+.site-header__link-logo {
+    display: block;
+}
+.site-header__btn {
+    display: none;
+}
+.site-header__btn-img {
+    display: block;
+}
+@include breakpoint-down(470px) {
+    .site-header__nav {
+        display: none;
+    }
+    .site-header__btn {
+        display: block;
+    }
+}
