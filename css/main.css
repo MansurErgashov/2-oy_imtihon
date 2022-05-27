@@ -453,6 +453,26 @@ img {
   .site-header__btn {
     display: block;
   }
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .navigation__item-link {
+    display: inline-block;
+    font-size: 20px;
+  }
 }
 
 .navigation__list {

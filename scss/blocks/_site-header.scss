@@ -30,4 +30,20 @@
     .site-header__btn {
         display: block;
     }
+    .navigation__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation__item {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
+    }
+    .navigation__item-link {
+        display: inline-block;
+        font-size: 20px;
+
+    }
 }
